@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> fg</title>
+  <style>
+      body
+      {
+        background: #add8e6;
+      }
+      .sort
+      {
+        display: inline;
+      }
+    #tableid
+      {
+        text-align: center;
+        width: 100%;
+      }
+      #emptable
+      {
+        background: #eee;
+        margin: 0 auto;
+        width: 1000px;
+      }
+    .theader
+      {
+        cursor: pointer;
+      }
+    .pages
+    {
+      float: right;
+    }
+  </style>
+  <script type = "text/javascript" src="createtable.js"> </script>
+  </head>
+  <body id = "body" onload = "createtable()">
+    <button onclick = "createtable()" style = "float: right">Reset</button><br>
+    <div id = "emptable">
+      <div id = "filterdiv">
+      </div>
+      <br>
+      <div id = "tablediv">
+      </div>
+      <div id = "pagediv">
+      </div>
+    </div>
+  </body>
+</html>
